@@ -1,9 +1,13 @@
 export default function SectionTitle({ title, bg, textColor }) {
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col items-center">
+      <div className="items-cente mb-6 flex flex-col">
+        <h1
+          className={`  mb-2 text-center text-3xl font-semibold md:text-5xl  ${textColor}`}
+        >
+          {title}
+        </h1>
         <div className={` h-[6px] w-11/12 rounded-full ${bg}`}></div>
-        <h1 className={`  text-center  font-medium  ${textColor}`}>{title}</h1>
       </div>
     </div>
   );

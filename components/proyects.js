@@ -8,14 +8,14 @@ export default function Proyects() {
     <Section>
       <div
         id="proyects"
-        className="min-h-screen w-full max-w-5xl   scroll-mt-14 bg-white/10 p-4 pb-10 "
+        className=" mx-auto flex min-h-screen w-full max-w-5xl scroll-mt-16 flex-col  items-center bg-white/10 p-4 pb-10 "
       >
         <SectionTitle
           title={"My proyects"}
           bg="bg-white"
           textColor={"text-white"}
         ></SectionTitle>
-        <div className="mt-6 flex w-full max-w-4xl flex-wrap items-center justify-center gap-4 ">
+        <div className=" flex  max-w-4xl flex-wrap items-center justify-center gap-4 ">
           <ProyectCard
             imageSrc={"/elMazo.png"}
             title={"elMazo"}

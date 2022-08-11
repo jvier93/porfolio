@@ -24,7 +24,7 @@ export default function Home() {
       <Head>
         <title>Pablo Kraiñuk </title>
       </Head>
-      <header className="sticky top-0 z-50  ">
+      <header className="sticky top-0 left-0 z-50  ">
         <Navbar onTop={onTop}></Navbar>
       </header>
 

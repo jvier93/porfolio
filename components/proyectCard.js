@@ -11,7 +11,7 @@ export default function ProyectCard({
   link,
 }) {
   return (
-    <article className="h-[345px] w-80 rounded-lg bg-white md:h-80 md:w-60 lg:w-72">
+    <article className="h-[345px] w-80 rounded-lg bg-white md:h-[360px] md:w-60 lg:w-72">
       <div className="aspect-w-2 aspect-h-1  ">
         <Image
           src={imageSrc}
@@ -19,7 +19,7 @@ export default function ProyectCard({
           className="rounded-t-lg object-cover "
         ></Image>
       </div>
-      <div className="flex flex-col gap-2 p-2 pb-4 text-darkpurple">
+      <div className="flex flex-col gap-2 p-4  text-darkpurple">
         <h3 className="text-xl font-medium ">{title}</h3>
         <div className="flex gap-2 p-2">
           {badges.map((badge, index) => {

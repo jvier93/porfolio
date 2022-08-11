@@ -1,38 +1,84 @@
 import Link from "next/link";
+import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 export default function Navbar({ onTop }) {
+  const [open, setOpen] = useState(true);
+
+  const navbarLinks = [
+    { name: "Skills", link: "#skills" },
+    { name: "Proyects", link: "#proyects" },
+    { name: "Contact", link: "#contact" },
+  ];
+
   return (
     <nav
-      className={` m-auto h-14 w-full max-w-5xl  p-2 transition-colors
-       delay-200 duration-500 ease-in md:pl-4 md:pr-4 lg:pr-8 lg:pl-8
+      className={` mx-auto flex h-16  w-full max-w-5xl
+      flex-col items-start justify-center px-7  transition-colors  duration-500 ease-in
+      md:flex-row md:items-center md:justify-between
       ${
         onTop
-          ? "bg-gray-100/4 text-white lg:bg-white/10"
+          ? `text-white ${
+              open && "bg-darkpurple"
+            } md:bg-transparent lg:bg-white/10 `
           : "bg-white  text-darkpurple"
-      }  flex items-center justify-between`}
+      }
+    
+      
+      `}
     >
       <div>
         <Link href={"#about"}>
           <a>
-            <h3 className="text-xl font-normal ">About</h3>
+            <h3 className="text-2xl font-semibold   transition-colors  duration-500 ease-in">
+              About
+            </h3>
           </a>
         </Link>
       </div>
       <div
-        className={`flex  w-44 justify-between  ${
-          onTop ? "font-light" : " font-normal"
-        } `}
+        onClick={() => {
+          setOpen(!open);
+        }}
+        className="absolute right-8 top-4 cursor-pointer text-3xl md:hidden"
       >
-        <Link href={"#skills"}>
-          <a>Skills</a>
-        </Link>
-        <Link href={"#proyects"}>
-          <a>Proyects</a>
-        </Link>
-        <Link href={"#contact"}>
-          <a>Contact </a>
-        </Link>
+        {open ? (
+          <AiOutlineClose></AiOutlineClose>
+        ) : (
+          <AiOutlineMenu></AiOutlineMenu>
+        )}
       </div>
+      <ul
+        className={`absolute left-0 top-[60px]  w-full 
+          transition-colors  duration-500 ease-in md:static  md:flex md:w-auto
+       
+        ${
+          open
+            ? `top-[60px]  opacity-100 ${
+                onTop ? "bg-darkpurple" : " bg-white"
+              } md:bg-transparent`
+            : "top-[-490px] opacity-0 md:opacity-100"
+        }
+        
+        `}
+      >
+        {navbarLinks.map(({ name, link }, index) => {
+          return (
+            <li
+              key={index}
+              onClick={() => {
+                setOpen(!open);
+              }}
+              className="md:text-normal my-7  ml-8 text-xl font-normal md:my-0 "
+            >
+              <Link href={link}>
+                <a>{name}</a>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }

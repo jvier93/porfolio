@@ -85,7 +85,7 @@ export default function Skills() {
     <Section>
       <div
         id="skills"
-        className="min-h-screen w-full max-w-5xl   scroll-mt-14  bg-white/90 p-4 pb-10  "
+        className="min-h-screen w-full max-w-5xl   scroll-mt-16  bg-white/90 p-4 pb-10  "
       >
         <SectionTitle
           title={"My skills"}
@@ -93,7 +93,7 @@ export default function Skills() {
           textColor={"text-darkpurple"}
         ></SectionTitle>
 
-        <div className="m-auto mt-4 grid w-full  max-w-4xl grid-flow-dense grid-cols-3 gap-2 md:grid-cols-6 ">
+        <div className="m-auto grid w-full max-w-4xl  grid-flow-dense grid-cols-3 gap-2  md:grid-cols-6 ">
           {skills.map(
             ({ imageSrc, blurDataURL, aspectRatioClasses, colSpan }, index) => {
               return (
@@ -104,7 +104,7 @@ export default function Skills() {
                   <Image
                     src={imageSrc}
                     layout="fill"
-                    className="rounded-md bg-white object-contain"
+                    className="rounded-md bg-white object-contain grayscale hover:grayscale-0"
                     placeholder="blur"
                     blurDataURL={blurDataURL}
                   ></Image>

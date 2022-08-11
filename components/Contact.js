@@ -12,7 +12,7 @@ export default function Contact() {
     <Section>
       <div
         id="contact"
-        className=" min-h-[60vh] w-full   max-w-5xl scroll-mt-14 bg-gray-100 p-4 "
+        className=" min-h-[60vh] w-full   max-w-5xl scroll-mt-16 bg-gray-100 p-4 "
       >
         <SectionTitle
           title={"Contact me"}
