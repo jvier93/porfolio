@@ -4,7 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 export default function Navbar({ onTop }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const navbarLinks = [
     { name: "Skills", link: "#skills" },
@@ -14,8 +14,8 @@ export default function Navbar({ onTop }) {
 
   return (
     <nav
-      className={` mx-auto flex h-16  w-full max-w-5xl
-      flex-col items-start justify-center px-7  transition-colors  duration-500 ease-in
+      className={` mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
+      px-7 transition-colors duration-500 ease-in 
       md:flex-row md:items-center md:justify-between
       ${
         onTop
@@ -31,9 +31,7 @@ export default function Navbar({ onTop }) {
       <div>
         <Link href={"#about"}>
           <a>
-            <h3 className="text-2xl font-semibold   transition-colors  duration-500 ease-in">
-              About
-            </h3>
+            <h3 className="text-2xl font-semibold   ">About</h3>
           </a>
         </Link>
       </div>
@@ -41,7 +39,7 @@ export default function Navbar({ onTop }) {
         onClick={() => {
           setOpen(!open);
         }}
-        className="absolute right-8 top-4 cursor-pointer text-3xl md:hidden"
+        className="absolute right-8 top-4 cursor-pointer  text-3xl md:hidden"
       >
         {open ? (
           <AiOutlineClose></AiOutlineClose>
@@ -50,8 +48,8 @@ export default function Navbar({ onTop }) {
         )}
       </div>
       <ul
-        className={`absolute left-0 top-[60px]  w-full 
-          transition-colors  duration-500 ease-in md:static  md:flex md:w-auto
+        className={`absolute left-0 top-[64px] w-full  transition-all duration-500  ease-in md:static
+         md:flex  md:w-auto md:transition-none
        
         ${
           open
