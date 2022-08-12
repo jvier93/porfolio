@@ -15,7 +15,7 @@ export default function Navbar({ onTop }) {
   return (
     <nav
       className={` mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
-      px-7 transition-colors duration-500 ease-in 
+      px-7  transition-colors duration-500 ease-in 
       md:flex-row md:items-center md:justify-between
       ${
         onTop
@@ -30,8 +30,12 @@ export default function Navbar({ onTop }) {
     >
       <div>
         <Link href={"#about"}>
-          <a>
-            <h3 className="text-2xl font-semibold   ">About</h3>
+          <a
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
+            <h3 className="text-2xl font-semibold    ">About</h3>
           </a>
         </Link>
       </div>
@@ -68,7 +72,8 @@ export default function Navbar({ onTop }) {
               onClick={() => {
                 setOpen(!open);
               }}
-              className="md:text-normal my-7  ml-8 text-xl font-normal md:my-0 "
+              className={`  md:text-normal my-7  ml-8 text-xl font-normal md:my-0 
+              `}
             >
               <Link href={link}>
                 <a>{name}</a>

@@ -33,7 +33,9 @@ export default function Contact() {
             <li className="flex items-center">
               <AiOutlineLinkedin size={20}></AiOutlineLinkedin>
               <Link href={"https://www.linkedin.com/in/pablo-krai%C3%B1uk/"}>
-                <a className="pl-2">linkedin.com/in/pablo-kraiñuk</a>
+                <a className="cursor-pointer pl-2">
+                  linkedin.com/in/pablo-kraiñuk
+                </a>
               </Link>
             </li>
           </ul>

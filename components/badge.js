@@ -1,6 +1,6 @@
 export default function Badge({ text }) {
   return (
-    <p className="w-fit whitespace-nowrap rounded-full bg-darkpurple pr-2 pl-2  text-xs text-white">
+    <p className="w-fit whitespace-nowrap rounded-full bg-darkpurple px-2 text-sm  text-white">
       {text}
     </p>
   );
