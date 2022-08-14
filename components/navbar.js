@@ -35,7 +35,9 @@ export default function Navbar({ onTop }) {
               setOpen(false);
             }}
           >
-            <h3 className="text-2xl font-semibold    ">About</h3>
+            <h3 className="text-2xl font-semibold transition-transform active:scale-90 ">
+              About
+            </h3>
           </a>
         </Link>
       </div>
@@ -72,7 +74,7 @@ export default function Navbar({ onTop }) {
               onClick={() => {
                 setOpen(!open);
               }}
-              className={`  md:text-normal my-7  ml-8 text-xl font-normal md:my-0 
+              className={`  md:text-normal  my-7 ml-8 text-xl font-normal transition-transform active:scale-90 md:my-0 
               `}
             >
               <Link href={link}>

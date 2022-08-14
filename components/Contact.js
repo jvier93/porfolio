@@ -20,17 +20,17 @@ export default function Contact() {
           textColor={"text-darkpurple"}
         ></SectionTitle>
         <div className="flex h-[30vh] w-full flex-col items-center justify-center">
-          <ul className=" font-normal">
-            <li className=" mb-2 flex items-center">
+          <ul className=" font-normal md:text-xl ">
+            <li className=" mb-2 flex items-center md:mb-4">
               <AiOutlinePhone size={20}></AiOutlinePhone>{" "}
               <span className="pl-2">+598 97 807 045</span>
             </li>
-            <li className="mb-2 flex items-center">
+            <li className="mb-2 flex items-center md:mb-4">
               {" "}
               <AiOutlineMail size={20}></AiOutlineMail>{" "}
               <span className="pl-2">pablo-krai@hotmail.com</span>
             </li>
-            <li className="flex items-center">
+            <li className="flex items-center ">
               <AiOutlineLinkedin size={20}></AiOutlineLinkedin>
               <Link href={"https://www.linkedin.com/in/pablo-krai%C3%B1uk/"}>
                 <a className="cursor-pointer pl-2">

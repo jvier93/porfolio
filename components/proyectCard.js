@@ -22,7 +22,7 @@ export default function ProyectCard({
           className="rounded-t-lg object-cover "
         ></Image>
       </div>
-      <div className="flex flex-col gap-2 p-4  text-darkpurple">
+      <div className="flex flex-col gap-2 p-4 text-darkpurple  md:gap-3">
         <h3 className="text-xl font-medium ">{title}</h3>
         <div className="flex gap-2 p-2">
           {badges.map((badge, index) => {
