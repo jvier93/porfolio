@@ -86,7 +86,7 @@ export default function Skills() {
           textColor={"text-darkpurple"}
         ></SectionTitle>
 
-        <div className=" m-auto grid w-full max-w-4xl grid-cols-3 gap-2 md:grid-cols-4 md:gap-6 md:p-4   ">
+        <div className=" m-auto grid w-full max-w-4xl grid-cols-2 gap-2 md:grid-cols-4 md:gap-6 md:p-4   ">
           {skills.map(
             (
               { imageSrc, blurDataURL, skillName, aspectRatioClasses },
