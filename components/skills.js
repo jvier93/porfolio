@@ -97,7 +97,7 @@ export default function Skills() {
                   key={index}
                   className="group relative rounded-2xl bg-white  p-4 shadow-lg"
                 >
-                  <div className="absolute left-0 bottom-0 z-[40]  hidden h-full w-full items-center justify-center rounded-2xl group-hover:flex  ">
+                  <div className="absolute left-0 bottom-0 z-[40]  hidden h-full w-full items-end justify-center rounded-2xl pb-2 group-hover:flex  ">
                     <h1 className="rounded-2xl bg-black/50 py-2 px-4 font-normal text-white md:text-xl ">
                       {skillName}
                     </h1>
@@ -108,7 +108,7 @@ export default function Skills() {
                     <Image
                       src={imageSrc}
                       layout="fill"
-                      className="bg-white  object-contain grayscale group-hover:grayscale-0   "
+                      className="bg-white  object-contain grayscale transition-all duration-500 group-hover:-translate-y-6  group-hover:scale-75 group-hover:grayscale-0  "
                       placeholder="blur"
                       blurDataURL={blurDataURL}
                     ></Image>

@@ -11,7 +11,7 @@ export default function About() {
         max-w-5xl
           scroll-mt-16 flex-col items-center justify-center transition-colors   duration-500 ease-in lg:bg-white/10"
       >
-        <div className=" relative h-44 w-44 rounded-full">
+        <div className=" relative h-44 w-44 overflow-hidden rounded-full">
           <Image
             layout="fill"
             className="rounded-full"
@@ -28,8 +28,8 @@ export default function About() {
         <div className="py-6 px-8 md:px-16 ">
           <p className="text-justify  text-lg text-white  md:text-2xl ">
             Hi there!, i like to make new things, and know how things work in
-            this world. I am a responsible and a detail oriented person.
-            Actually this is my hobbie but i wish this would by my way of life.
+            this world. I am a responsible and a detail-oriented person.
+            Actually this is my hobbie but i want it to be my job.
           </p>
         </div>
       </div>
