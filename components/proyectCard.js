@@ -1,6 +1,6 @@
 import Badge from "./badge";
 import Image from "next/image";
-import { AiOutlineLink, AiOutlineEye, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import Link from "next/link";
 
 export default function ProyectCard({

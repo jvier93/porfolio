@@ -108,7 +108,7 @@ export default function Skills() {
                     <Image
                       src={imageSrc}
                       layout="fill"
-                      className="bg-white  object-contain grayscale transition-all duration-500 group-hover:-translate-y-6  group-hover:scale-75 group-hover:grayscale-0  "
+                      className="bg-white  object-contain grayscale transition-all duration-500 group-hover:-translate-y-5  group-hover:scale-75 group-hover:grayscale-0  "
                       placeholder="blur"
                       blurDataURL={blurDataURL}
                     ></Image>
