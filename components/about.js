@@ -27,9 +27,9 @@ export default function About() {
 
         <div className="py-6 px-8 md:px-16 ">
           <p className="text-justify  text-lg text-white  md:text-2xl ">
-            Hi there!, i like to make new things, and know how things work in
-            this world. I am a responsible and a detail-oriented person.
-            Actually this is my hobbie but i want it to be my job.
+            Hi!. I like learning and i like to make new things, and know how
+            things work in this world. I am a responsible and a detail-oriented
+            person. Currently this is my hobbie but i want it to become my job.
           </p>
         </div>
       </div>

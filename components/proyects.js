@@ -8,7 +8,7 @@ export default function Proyects() {
     {
       title: "elMazo",
       description:
-        "App with some online cards games like 'La Conga' called 'Chinchón' too, and 'el Truco'.",
+        "App with an online cards games called 'La Conga' also know as 'Chinchón'",
       imageSrc: "/elMazo.png",
       badges: ["React", "Socket io", "Tailwind css"],
       blurDataURL:
