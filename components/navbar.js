@@ -14,7 +14,7 @@ export default function Navbar({ onTop }) {
 
   return (
     <nav
-      className={`z-50 mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
+      className={` mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
       px-7  transition-colors duration-500 ease-in 
       md:flex-row md:items-center md:justify-between
       ${
