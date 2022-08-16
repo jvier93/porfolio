@@ -8,3 +8,9 @@
     @apply scroll-smooth;
   }
 }
+
+@layer components {
+  .genericHambugerLine {
+    @apply my-1 h-[2px] w-7 transform rounded-full transition duration-500;
+  }
+}

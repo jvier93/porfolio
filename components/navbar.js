@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
+
 import { useState } from "react";
+import ToggleMenuIcon from "./toggleMenuIcon";
 
 export default function Navbar({ onTop }) {
   const [open, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Navbar({ onTop }) {
 
   return (
     <nav
-      className={` mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
+      className={`z-50 mx-auto flex h-16  w-full max-w-5xl flex-col items-start justify-center
       px-7  transition-colors duration-500 ease-in 
       md:flex-row md:items-center md:justify-between
       ${
@@ -41,20 +41,15 @@ export default function Navbar({ onTop }) {
           </a>
         </Link>
       </div>
-      <div
-        onClick={() => {
-          setOpen(!open);
-        }}
-        className="absolute right-8 top-4 cursor-pointer  text-3xl md:hidden"
-      >
-        {open ? (
-          <AiOutlineClose></AiOutlineClose>
-        ) : (
-          <AiOutlineMenu></AiOutlineMenu>
-        )}
-      </div>
+      <ToggleMenuIcon
+        open={open}
+        setOpen={setOpen}
+        onTop={onTop}
+      ></ToggleMenuIcon>
+
+      {/* we use z-index -1 here to avoid upset blink effect in toggle menu icon and in md screens we use z auto what is its default value */}
       <ul
-        className={`absolute left-0 top-[64px] w-full  transition-all duration-500  ease-in md:static
+        className={`absolute left-0 top-[64px] z-[-1] w-full transition-all duration-500 ease-in  md:static md:z-auto
          md:flex  md:w-auto md:transition-none
        
         ${
