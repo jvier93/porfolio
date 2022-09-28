@@ -23,7 +23,7 @@ export default function Contact() {
           <ul className=" font-normal md:text-xl ">
             <li className=" mb-2 flex items-center md:mb-4">
               <AiOutlinePhone size={20}></AiOutlinePhone>{" "}
-              <span className="pl-2">+598 97 807 045</span>
+              <span className="pl-2">+598 97 439 480</span>
             </li>
             <li className="mb-2 flex items-center md:mb-4">
               {" "}
