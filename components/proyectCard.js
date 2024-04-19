@@ -41,11 +41,13 @@ export default function ProyectCard({
             </a>
           </Link>
 
-          <Link href={linkRepo}>
-            <a className=" flex cursor-pointer items-center gap-2 font-normal ">
-              <AiOutlineGithub size={20}></AiOutlineGithub> <p>View repo</p>
-            </a>
-          </Link>
+          {linkRepo && (
+            <Link href={linkRepo}>
+              <a className=" flex cursor-pointer items-center gap-2 font-normal ">
+                <AiOutlineGithub size={20}></AiOutlineGithub> <p>View repo</p>
+              </a>
+            </Link>
+          )}
         </div>
       </div>
     </article>

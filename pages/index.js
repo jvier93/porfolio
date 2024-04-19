@@ -36,7 +36,7 @@ export default function Home() {
       </main>
       <footer className="  flex justify-center    ">
         <div className="flex h-[35vh] w-full max-w-5xl flex-col items-center justify-center bg-footer-wave  bg-no-repeat pb-4 text-sm text-white  md:justify-end md:bg-cover lg:bg-white/10 ">
-          <p>Portfolio Pablo Kraiñuk 2022.</p>
+          <p>Portfolio Pablo Kraiñuk {new Date().getFullYear()}</p>
           <p className="mt-2 text-xs">Made with: Nextjs and Tailwind css</p>
         </div>
       </footer>
